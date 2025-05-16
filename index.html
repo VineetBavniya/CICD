@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime World</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        line-height: 1.6;
+        color: #fff;
+        background: #1a1a2e;
+      }
+      .hero {
+        position: relative;
+        height: 100vh;
+        background: url("beautiful-anime-character-cartoon-scene.jpg") no-repeat
+          center center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: 2px 2px 4px #000;
+      }
+      .hero p {
+        font-size: 1.5rem;
+        color: #ddd;
+        text-shadow: 1px 1px 2px #000;
+        max-width: 600px;
+      }
+      section {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+      h2 {
+        color: #ff6f61;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+      }
+      .services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+      }
+      .service {
+        flex: 1 1 30%;
+        background: #2e2e48;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .service h3 {
+        color: #ffd369;
+      }
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+      }
+      form button {
+        padding: 12px 20px;
+        background: #ff6f61;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #0f0f1a;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Welcome to Anime World</h1>
+      <p>
+        Explore the vibrant universe of anime through art, stories, and
+        technology. Dive into creativity with us!
+      </p>
+    </div>
+
+    <section>
+      <h2>About Anime World</h2>
+      <p>
+        Anime World is a creative studio and community celebrating Japanese
+        animation, manga, and modern storytelling. We connect fans and creators
+        through immersive experiences and content.
+      </p>
+    </section>
+
+    <section>
+      <h2>What We Do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Character Design</h3>
+          <p>
+            Crafting unique anime characters with personality, emotion, and
+            stunning visuals.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Storyboarding</h3>
+          <p>
+            Building engaging storyboards that bring anime concepts to life
+            before animation begins.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Animation Studio</h3>
+          <p>
+            Our animation team produces short films, intros, and full-length
+            episodes with professional quality.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Anime World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

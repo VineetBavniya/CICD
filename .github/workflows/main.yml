@@ -28,10 +28,10 @@ jobs:
         env:
           REGISTRY: ${{ steps.login-ecr-public.outputs.registry }}
           REPOSITORY: demo
-          IMAGE_TAG: ${{ github.sha }}
+          IMAGE_TAG: latest
 
         run: |
-          docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG:latest .
-          docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG:latest
+          docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
+          docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
 
 
